@@ -63,6 +63,6 @@
         displayImage = ""; //Clean our virtual calculation environment after calculus function called.
         currentOperation = "";   
     } 
-    }
+}
       
 })();
