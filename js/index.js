@@ -33,7 +33,7 @@
     //if (currentOperation != ev.target.innerText) {
     currentOperation = ev.target.innerText;
     display.value = cloudValue + currentOperation;
-    //displayImage = display.value;
+    displayImage = display.value;
     //display.value += ev.target.innerText;
     
   }
@@ -47,12 +47,13 @@
     //     display.value = eval(displayImage);
     //    }  
     displayImage = display.value;
-    if (displayImage.charAt(-1) === '+') {
+    if (display.value.slice(-1) === currentOperation) {
+        //displayImage = displayImage + 
         display.value = 'hello';
        } else {
-        display.value = eval(display.value);
+        display.value = eval(displayImage);
         cloudValue = display.value;
-              }
+       } 
     }
       
 //   document.querySelector(".memplus").addEventListener("click", memAdd);
